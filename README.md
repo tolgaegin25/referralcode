@@ -1,1 +1,1 @@
-# referrealCode
+# referralcode
