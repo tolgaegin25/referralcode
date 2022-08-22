@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:"Circular","CircularStd",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    background-color: #0A1551;
+  }
+h5{
+  padding-top:15px;
+    margin:5px;
+    font-size:20px;
+    line-height:25px;
+}
+h5 span{
+  color:#049e38;
+}
+hr{
+  width:30%;
+}
+p{
+    font-size:12px;
+}
+hr{
+    margin-top:20px;
+}
+.outer{
+margin:0 auto;
+max-width:1200px;
+height:auto;
+background-color:#0A1551;
+}
+
+.container{
+    padding:0;
+    width:100%;
+    border:1px solid black;
+    display:flex;
+    transition: all 0.3s;
+    background-color: #ffff;
+    border-radius:10px;
+}
+#sidebar{
+    min-width:250px;
+    max-width:250px;
+    background:#e3e5f5;
+    color:#e3e5f5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.topMenu{
+  text-align:center;
+}
+.topMenu svg{
+  padding-top:10px;
+}
+.topMenu button{
+  padding:5px;
+  width:45px;
+  height:45px;
+  border-radius: 50px;
+  border:none;
+}
+.topMenu span{
+  font-weight:650;font-size:32px;
+}
+.topMenu ul{
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+}
+.topMenu li{
+    display:inline-block;
+}
+.topMenu li a{
+    display: block;
+    padding:12px 16px;
+    color:white;
+    text-decoration:none;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    
+}
+#sidebar ul li{
+    text-align:left;
+    color:#e3e5f5;
+}
+#sidebar ul li a{
+    font-size:15px;
+    height:auto;
+    line-height:70px;
+    text-decoration: none;
+    color:#454c78;
+}
+#sidebar ul li svg{
+    width:19px;
+    height:19px;
+    fill:#454c78;
+}
+#sidebar ul li span{
+ padding-left:10px;
+}
+.content{
+    font-family: Circular,sans-serif;
+    text-align:center;
+    width:100%;
+    height:auto;
+    padding:10px;
+}
+.content-header{
+  line-height:18px;
+  text-align:center;
+}
+.forms{
+    padding-top:30px;
+}
+.form{
+    margin-top:20px;
+    width:40%;
+    display: inline-block;
+}
+.form button{
+    background-color:#fff;
+    border:3px solid rgb(249 250 251);
+    width:95%;padding:15px;
+    border-radius: 8px;
+  }
+  .form button:hover{
+    box-shadow: 2px 2px 2px 1px #c8c8c8;
+  }
+  .social{
+    padding-top:20px;
+  }
+  .social button{
+    
+    border:none;
+    background-color: #e9eaf7;
+    border-color:#e9eaf7;
+    padding:10px;
+    border-radius:4px;
+    font-size:15px;
+    color:#0a1551;
+    width:100%;
+  }
+  .social svg{
+    fill:#0a1551;
+    padding-top:7px;
+    width:20px;
+    height:20px;
+  }
+  .social .socialBtn{
+    padding-top:10px;
+    margin-left:10px;
+    width:20%;
+    display: inline-block;
+  }
+  .refercode{
+    padding-top:50px;
+    text-align:left;
+  }
+  .refercode span{
+    font-size:15px;
+    font-weight:500;
+    padding-left:10px;
+  }
+  .refercode .input{
+    display: inline-block;
+    width:70%;
+    padding-left:10px;
+  }
+  .input input{
+    width:100%;
+    padding-left:10px;
+    height:30px;
+  }
+  .refercode .referBtn{
+    display: inline-block;
+    width:20%;
+  }
+  .referBtn button{
+    background-color:#64b200;
+    border:none;
+    padding:6px;
+    color:white;
+    border-radius: 4px;
+    width:100%;
+    font-size:15px;
+  }
+  .referBtn button span{
+    padding-left:4px;
+  }
+  .form .img{
+    float:left;
+    width:40px;
+    height:40px;
+    background-color: #e9eaf7;
+    border-radius:3px;
+  }
+  .form .img svg{
+    padding-top:10px;
+    fill:#049e38
+  }
+  .form .colored{
+    color:#c8c8c8;font-size:12px;
+  }
+  .records{
+    padding-top:25px;
+    text-align:left;
+  }
+  .records span{
+    font-size:15px;
+    font-weight:500;
+    padding-bottom:10px;
+    padding-left:10px;
+  }
+  .records table{
+    padding-left:10px;
+  }
+  .records td{
+    padding-left:10px;
+    padding-top:10px;
+    border-left:1px solid black;
+  }
+  @media screen and (max-width: 720px) {
+    #sidebar {
+      visibility: hidden;
+      clear: both;
+      display: none;
+    }
+    .topMenu{
+        visibility: hidden;
+        clear: both;
+        display: none; 
+    }
+   .form{
+    width:70%;
+   }
+   
+   .social .socialBtn{
+    width: 70%;
+   }
+   .refercode .input{
+    width:100%;
+}
+    .refercode .referBtn{
+    margin-top:15px;
+    width:100%;
+  }
+  }
+  @media (min-width:721px) and (max-width: 1024px) {
+    #sidebar {
+      visibility: hidden;
+      clear: both;
+      display: none;
+    }
+    .topMenu{
+        visibility: hidden;
+        clear: both;
+        display: none; 
+    }
+   .form{
+    width:70%;
+   }
+   
+   .social .socialBtn{
+    width: 40%;
+   }
+   .refercode .input{
+    width:100%;
+}
+    .refercode .referBtn{
+    margin-top:15px;
+    width:100%;
+  }
+  }
+
+  .lightbox{
+    display:flex;
+    position:fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.8);
+    z-index:9999;
+    animation: closeLightbox 5s 1;
+    visibility: hidden;
+  }
+  .lightbox div{
+    background:#fff;
+    padding:1em;
+    max-width:90%;
+    position:relative;
+  }
+  .ligtbox div img{
+      width:100%;
+  }
+  @keyframes closeLightbox {
+    0% {opacity:1;visibility: visible;}
+    80% {opacity:1;visibility: visible;}
+    100% {opacity:0;visibility: hidden;}
+  }
+  .lightbox div a{
+    position:absolute;
+    top:0px;
+    right:0px;
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    text-decoration: none;
+    color:#454c78;
+  }
+  section:target{
+    visibility:hidden;
+    animation:none;
+  }
+  #text{
+    text-align:center;
+    padding-top:25px
+  }
+ 
+  .form-text{
+    text-align:left;
+  }
+  .form-text span{
+    font-weight:bold;
+    font-size:14px;
+    padding-left:10px;
+  }
+
+  
