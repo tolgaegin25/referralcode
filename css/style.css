@@ -113,6 +113,7 @@ background-color:#0A1551;
     width:100%;
     height:auto;
     padding:10px;
+    padding-left:25px;
 }
 .content-header{
   line-height:18px;
@@ -129,13 +130,16 @@ background-color:#0A1551;
 .form button{
     background-color:#fff;
     border:3px solid rgb(249 250 251);
-    width:95%;padding:15px;
+    width:95%;
+    padding:15px;
     border-radius: 8px;
   }
   .form button:hover{
     box-shadow: 2px 2px 2px 1px #c8c8c8;
   }
   .social{
+    display:flex;
+    justify-content: center;
     padding-top:20px;
   }
   .social button{
@@ -162,18 +166,21 @@ background-color:#0A1551;
     display: inline-block;
   }
   .refercode{
-    padding-top:50px;
-    text-align:left;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top:5px;
   }
-  .refercode span{
+  .referlink{
+    padding-top:20px;
+    text-align:left;
     font-size:15px;
     font-weight:500;
-    padding-left:10px;
+    padding-left:18px;
   }
   .refercode .input{
-    display: inline-block;
     width:70%;
-    padding-left:10px;
+    padding-left:20px;
   }
   .input input{
     width:100%;
@@ -181,7 +188,6 @@ background-color:#0A1551;
     height:30px;
   }
   .refercode .referBtn{
-    display: inline-block;
     width:20%;
   }
   .referBtn button{
@@ -242,9 +248,22 @@ background-color:#0A1551;
    .form{
     width:70%;
    }
-   
+   .referlink{
+    padding-top:20px;
+    text-align:left;
+    font-size:15px;
+    font-weight:500;
+    padding-left:10px;
+  }
+   .social{
+    flex-direction: column;
+    align-items: center;
+   }
    .social .socialBtn{
-    width: 70%;
+    width: 90%;
+   }
+   .refercode{
+    flex-direction: column;
    }
    .refercode .input{
     width:100%;
@@ -252,6 +271,11 @@ background-color:#0A1551;
     .refercode .referBtn{
     margin-top:15px;
     width:100%;
+  }
+  .records{
+    padding-top:25px;
+    text-align:left;
+    padding-left:10px;
   }
   }
   @media (min-width:721px) and (max-width: 1024px) {
@@ -268,9 +292,22 @@ background-color:#0A1551;
    .form{
     width:70%;
    }
-   
+   .referlink{
+    padding-top:20px;
+    text-align:left;
+    font-size:15px;
+    font-weight:500;
+    padding-left:10px;
+  }
+   .social{
+    flex-direction: column;
+    align-items: center;
+   }
+   .refercode{
+    flex-direction: column;
+   }
    .social .socialBtn{
-    width: 40%;
+    width: 90%;
    }
    .refercode .input{
     width:100%;
@@ -278,6 +315,11 @@ background-color:#0A1551;
     .refercode .referBtn{
     margin-top:15px;
     width:100%;
+  }
+  .records{
+    padding-top:25px;
+    text-align:left;
+    padding-left:10px;
   }
   }
 
