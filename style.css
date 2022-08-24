@@ -344,7 +344,7 @@ background-color:#0A1551;
     position:absolute;
     border-top:8px solid #FF6100;
     overflow:visible;
-    padding-bottom:80px;
+    
   }
   .lightbox #closeLightbox{
     position:absolute;
@@ -433,6 +433,8 @@ background-color:#0A1551;
     color:#0A1551;
   }
   .inner-text h2{
+    padding-left:7%;
+    padding-right:7%;
     font-size:46px;
     padding-top:30px;
   }
@@ -480,17 +482,13 @@ background-color:#0A1551;
     
   }
   .limg{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 200px;
+    float:left;
+    height: 300px;
     
   }
   .rimg{
-   position:absolute;
-   bottom:0;
-   right:0;
-   height:200px;
+    float:right;
+    height: 300px;
   }
   .twitter {
   background: #00aced;
