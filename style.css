@@ -339,17 +339,13 @@ background-color:#0A1551;
   }
   .lightbox .inner{  
     background:#fff;
-    max-width:90%;
     height:auto;
-    position:absolute;
     border-top:8px solid #FF6100;
-    padding-bottom:80px;
   }
   .lightbox #closeLightbox{
     position:absolute;
     top:0px;
     right:0px;
-    display:block;
     width:50px;
     height:50px;
     line-height:40px;
@@ -421,10 +417,13 @@ background-color:#0A1551;
   }
   
   .inner-text{
+    position: relative;
     padding:0;
     margin:0;
     text-align:center;
     color:#0A1551;
+    padding-bottom:80px;
+    width:100%;
   }
   .inner-text h2{
     padding:0 11%;
@@ -518,10 +517,6 @@ background-color:#0A1551;
   flex-direction: space-around;
   justify-content: center;
   padding-top:20px;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-
 }
 
 
