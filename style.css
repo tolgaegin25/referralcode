@@ -339,7 +339,6 @@ background-color:#0A1551;
   }
   .lightbox .inner{  
     background:#fff;
-    padding:1em;
     max-width:90%;
     height:auto;
     position:absolute;
@@ -429,6 +428,7 @@ background-color:#0A1551;
   }
   
   .inner-text{
+
     text-align:center;
     color:#0A1551;
   }
@@ -452,15 +452,16 @@ background-color:#0A1551;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     background: #FEB53B;
     border-radius: 20px;
-    color: #FFF;
+    color: #000;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 200;
     cursor: pointer;
+    font-weight:600;
   }
   
   .LightSocial {
@@ -484,7 +485,8 @@ background-color:#0A1551;
   }
   .limg{
     position:absolute;
-    bottom:0;left:0;
+    bottom:0;
+    left:0;
     height:200px;
   }
   .rimg{
