@@ -337,16 +337,13 @@ background-color:#0A1551;
     /*animation: closeLightbox 5s 1;
     visibility: hidden;*/
   }
-  .lightbox .inner{ 
-    padding:0;
-    margin:0; 
+  .lightbox .inner{  
     background:#fff;
     max-width:90%;
     height:auto;
     position:absolute;
     border-top:8px solid #FF6100;
-    overflow:visible;
-    
+    padding-bottom:80px;
   }
   .lightbox #closeLightbox{
     position:absolute;
@@ -405,9 +402,6 @@ background-color:#0A1551;
   }  
 
   @media (min-width:500px) and (max-width: 896px) {
-    .lightbox .inner{
-        height:auto;
-    }
     .lightbox .rimg{
       height:120px;
     }
@@ -417,9 +411,6 @@ background-color:#0A1551;
 
   }
   @media (min-width:0px) and (max-width: 500px) {
-    .lightbox .inner{
-        height:auto;
-    }
     .lightbox .rimg{
       height:90px;
     }
@@ -430,13 +421,13 @@ background-color:#0A1551;
   }
   
   .inner-text{
-
+    padding:0;
+    margin:0;
     text-align:center;
     color:#0A1551;
   }
   .inner-text h2{
-    padding-left:7%;
-    padding-right:7%;
+    padding:0 11%;
     font-size:46px;
     padding-top:30px;
   }
@@ -484,13 +475,17 @@ background-color:#0A1551;
     
   }
   .limg{
-    float:left;
-    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 200px;
     
   }
   .rimg{
-    float:right;
-    height: 300px;
+   position:absolute;
+   bottom:0;
+   right:0;
+   height:200px;
   }
   .twitter {
   background: #00aced;
