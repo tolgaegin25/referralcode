@@ -532,6 +532,7 @@ background-color:#0A1551;
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .lightbox{
+    margin:0 auto;
     display:flex;
     position:fixed;
     flex-direction: column;
