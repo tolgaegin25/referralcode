@@ -433,8 +433,6 @@ background-color:#0A1551;
     color:#0A1551;
   }
   .inner-text h2{
-    padding-left: 5%;
-    padding-right:5%;
     font-size:46px;
     padding-top:30px;
   }
@@ -442,13 +440,11 @@ background-color:#0A1551;
     color:#43465C;
     font-weight:500;
     font-size:23px;
-     
     line-height:28px;
     padding-top:5px;
   }
   .LightBtn {
     z-index: 99;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -484,10 +480,11 @@ background-color:#0A1551;
     
   }
   .limg{
-    position:absolute;
-    bottom:0;
-    left:0;
-    height:200px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 200px;
+    
   }
   .rimg{
    position:absolute;
@@ -528,33 +525,10 @@ background-color:#0A1551;
   padding-top:20px;
 }
 
-
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .lightbox{
-    display:flex;
-    position:fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width:100%;
-    height:100%;
-    background: rgba(0,0,0,.8);
-    z-index:9999;
-    margin:0 auto;
-    /*animation: closeLightbox 5s 1;
-    visibility: hidden;*/
-  }
-  .lightbox .inner{  
-    background:#fff;
-    max-width:90%;
-    height:auto;
-    position:absolute;
-    border-top:8px solid #FF6100;
-    overflow:visible;
-    padding-bottom:80px;
-    margin:0 auto;
-  }
+
 }
+
 
 
 
