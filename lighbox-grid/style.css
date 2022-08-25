@@ -579,12 +579,29 @@ background-color:#0A1551;
 
   .lightbox .inner{ 
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 1fr 0.6fr;
+    grid-template-columns: .6fr 1fr .6fr;
+    grid-template-rows: 0.8fr 1fr 0.6fr;
     background:#fff;
     height:auto;
     border-top:8px solid #FF6100;
     max-width:90%;
+  }
+  .item3{
+    position:relative;
+      display:grid;
+      justify-content:flex-start;
+      align-items: flex-end;
+      grid-column: 1/2;
+      grid-row:3/4;
+  }
+  .item5{
+    position:relative;
+      display:grid;
+      grid-column: 3/4;
+      justify-content:flex-end;
+      align-items: flex-end;
+      grid-row:3/4;
+      
   }
   .item1 h2{
     padding:0 5%;
@@ -617,7 +634,30 @@ background-color:#0A1551;
   .outerSocial svg{
     width:15px;
     height:15px;
+    z-index: 9999;;
   } 
+}
+@media (min-width:500px) and (max-width:580px) {
+  .item3{
+    position:relative;
+      display:grid;
+      justify-content:flex-start;
+      align-items: flex-end;
+      grid-column: 1/2;
+      grid-row:3/4;
+  }
+  .item5{
+    position:relative;
+      display:grid;
+      grid-column: 3/4;
+      justify-content:flex-end;
+      align-items: flex-end;
+      grid-row:3/4;
+      
+  }
+
+
+
 }
 
 
