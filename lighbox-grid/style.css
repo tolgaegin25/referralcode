@@ -556,6 +556,29 @@ background-color:#0A1551;
     text-align:center;
 
 }
+.talk .cls-1 {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: draw 2s infinite;
+}
+.cls-1{
+  fill:none;
+  stroke:black;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:5px;
+}
+
+@keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -60;
+  }
+
+
+}
 }
 
 
