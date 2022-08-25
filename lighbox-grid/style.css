@@ -536,7 +536,27 @@ background-color:#0A1551;
   justify-content: center;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .lightbox .inner{ 
+    display:grid;
+    grid-template-columns: 33% auto 33%;
+    grid-template-rows: .5fr 1fr .5fr;
+    background:#fff;
+    height:auto;
+    border-top:8px solid #FF6100;
+    max-width:90%;
+  }
+  .item2{
+   
+    grid-column: 1/-1;
+    grid-row:2/3;
+    display:grid;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
 
+}
+}
 
 
 
