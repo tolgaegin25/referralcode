@@ -4,7 +4,7 @@
 body{
     margin:0;
     padding:0;
-    font-family:"Circular","CircularStd",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family:"CircularStd",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     background-color: #0A1551;
   }
 h5{
@@ -382,8 +382,8 @@ background-color:#0A1551;
 }
   .lightbox #closeLightbox{
     position:absolute;
-    top:5px;
-    right:5px;
+    top:15px;
+    right:15px;
     line-height:40px;
     text-align:center;
     text-decoration: none;
@@ -404,7 +404,7 @@ background-color:#0A1551;
     stroke:black;
     stroke-linecap:round;
     stroke-linejoin:round;
-    stroke-width:5px;
+    stroke-width:3px;
   }
 
   @keyframes draw {
@@ -440,9 +440,10 @@ background-color:#0A1551;
     width:100%;
   }
   .item1 h2{
+    font-weight: bold;
     color:#0A1551;
     padding:0 11%;
-    font-size:46px;
+    font-size:45.23px;
   }
   .item2 span{
     text-align:center;
@@ -459,7 +460,7 @@ background-color:#0A1551;
     width: 180px;
     height: 50px;
     background: #FEB53B;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #0A1551;
     font-size: 20px;
     letter-spacing: 1px;
@@ -516,7 +517,7 @@ background-color:#0A1551;
 }
 .clicked {
   opacity: 1;
-  transition: 1.2s all ease;
+  transition: 0.7 all ease;
   transform: translateY(1px);
 }
 .outerBtn{
@@ -624,13 +625,13 @@ background-color:#0A1551;
     width: 80px;
     height: 25px;
     background: #FEB53B;
-    border-radius: 20px;
+    border-radius: 5px;
     color: #0A1551;
     font-size: 12px;
     letter-spacing: 1px;
     font-weight: 200;
     cursor: pointer;
-    font-weight:700;
+    font-weight:600;
   }
   .outerSocial svg{
     width:15px;
