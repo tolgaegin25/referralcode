@@ -337,8 +337,7 @@ background-color:#0A1551;
     /*animation: closeLightbox 5s 1;
     visibility: hidden;*/
   }
-  .lightbox .inner{ 
-    position: relative;
+  .lightbox .inner{
     display:grid;
     grid-template-columns: 33% auto 33%;
     grid-template-rows: .5fr 1.2fr .5fr;
@@ -348,6 +347,7 @@ background-color:#0A1551;
     max-width:90%;
   }
   .item1{
+    position:relative;
     text-align:center;
     grid-column-start: 1;
     grid-column-end: 4;
