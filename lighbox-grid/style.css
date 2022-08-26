@@ -338,6 +338,7 @@ background-color:#0A1551;
     visibility: hidden;*/
   }
   .lightbox .inner{ 
+    position: relative;
     display:grid;
     grid-template-columns: 33% auto 33%;
     grid-template-rows: .5fr 1.2fr .5fr;
@@ -438,7 +439,6 @@ background-color:#0A1551;
     padding-top:50px;
     text-align:center;
     color:#0A1551;
-    padding-bottom:80px;
     width:100%;
   }
   .item1 h2{
@@ -462,7 +462,7 @@ background-color:#0A1551;
     height: 50px;
     background: #FEB53B;
     border-radius: 20px;
-    color: #000;
+    color: #0A1551;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 200;
@@ -611,7 +611,6 @@ background-color:#0A1551;
   }
   .item2 span{
     padding-left:10px;
-    padding-right:10px;
     padding-bottom:10px;
     text-align:center;
     color:#43465C;
