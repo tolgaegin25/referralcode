@@ -491,6 +491,7 @@ width:100px;
   height:auto;
   border-top:8px solid #FF6100;
   max-width:90%;
+  
 }
 .item1{
   position:relative;
@@ -626,16 +627,14 @@ section:target{
   
 }
 .limg{
-  position:absolute;
-  left:0;
-  bottom:0;
-  height:auto;
+ display:flex;
+ justify-content: flex-start;
+ align-items: flex-end;
 }
 .rimg{
-  position: absolute;
-  bottom:0;
-  right:0;
-  height:auto;
+  display:flex;
+ justify-content: flex-end;
+ align-items: flex-end;
  }
 .twitter {
 background: #00aced;
