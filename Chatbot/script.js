@@ -4,38 +4,33 @@ const data = {
         "id": "1",
         "buttonName": "What is advantage of the campaign?",
         "value": "marmik desai",
-        "link": "https://www.google.co.in/"
       },
       {
         "id": "2",
         "buttonName": "How long can the offer be used?",
-        "value": "JS",
-        "link": "https://www.google.co.in/"
+        "value": "JS",  
       },
       {
         "id": "3",
         "buttonName": "Which plan does the offer apply?",
-        "value": "SVG",
-        "link": "https://www.google.co.in/"
+        "value": "SVG", 
       },
       {
         "id": "4",
         "buttonName": "Will there be a price increase on the plan after the offer?",
-        "value": "SVG",
-        "link": "https://www.google.co.in/"
+        "value": "SVG",  
       },
 
       {
         "id": "5",
         "buttonName": "Is there a refund in case of cancellation?",
         "value": "es6",
-        "link": "https://www.google.co.in/"
       },
       {
         "id": "6",
         "buttonName": "What happens after a year when the plan is finished?",
         "value": "es6",
-        "link": "https://www.google.co.in/"
+        
       }
     ]
   };
@@ -44,8 +39,8 @@ const data = {
   class Messenger {
     constructor() {
       this.messageList = [];
-      this.me = 1; // completely arbitrary id
-      this.them = 5; // and another one
+      this.me = 1;
+      this.them = 5;
       this.onRecieve = (message) => console.log('Recieved: ' + message.text);
       this.onSend = (message) => console.log('Sent: ' + message.text);
       this.onButtonOption = (message) => console.log('ButtonOption: ' + message.text);
@@ -57,10 +52,6 @@ const data = {
       text.forEach((item,index) => {
         buttonOpt.innerHTML += item;
       })
-  
-  // I dont know how to covert object into string (i userd toString but doesn't work)
-  // therefor i am not using chatMain() method here
-  
       if (this.validate(text)) {
         let message = {
           user: this.them,
@@ -97,7 +88,7 @@ const data = {
     }
   
     validate(input) {
-      return !!input.length; // an amazing example of validation I swear.
+      return !!input.length;
     }
   }
     
@@ -151,7 +142,7 @@ const data = {
         response(item.id);
         setTimeout(() => {
             buttonMain();
-          }, 25000);
+          }, 5000);
         
       }
     })
@@ -234,11 +225,8 @@ const data = {
     $input.focus();
   
     setTimeout(() => {
-      messenger.recieve('This is not live chat so stop messing up here, if you want to develop this contact me on marmikdesai@live.com');
+      messenger.recieve('End of the ChatBot');
     }, 1500);
-    setTimeout(() => {
-      buttonMain()
-    }, 4000);
   }
   
   function buttonMain() {
