@@ -41,14 +41,6 @@ background-color:#0A1551;
     background-color: #ffff;
     border-radius:10px;
 }
-#sidebar{
-    min-width:250px;
-    max-width:250px;
-    background:#e3e5f5;
-    color:#e3e5f5;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
 .topMenu{
   text-align:center;
 }
@@ -63,15 +55,13 @@ background-color:#0A1551;
   border:none;
 }
 .topMenu span{
-  font-weight:650;font-size:32px;
+  font-weight:650;
+  font-size:32px;
 }
 .topMenu ul{
     list-style-type: none;
-
     margin: 0;
-
     padding: 0;
-
     overflow: hidden;
 }
 .topMenu li{
@@ -83,10 +73,16 @@ background-color:#0A1551;
     color:white;
     text-decoration:none;
 }
-
+#sidebar{
+  min-width:250px;
+  max-width:250px;
+  background:#e3e5f5;
+  color:#e3e5f5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 #sidebar ul {
-    list-style-type: none;
-    
+    list-style-type: none;  
 }
 #sidebar ul li{
     text-align:left;
