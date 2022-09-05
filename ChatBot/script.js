@@ -1,3 +1,5 @@
+$("#podo").on("click",function(){
+
 const data = {
     "button": [
       {
@@ -223,10 +225,15 @@ const data = {
     messenger.send(text);
     $input.val('');
     $input.focus();
-  
     setTimeout(() => {
       messenger.recieve('End of the ChatBot');
     }, 1500);
+    setTimeout(()=>{
+      var chatbot=document.getElementById("chatbot");
+      chatbot.style.display="none";
+    },3000)
+    
+
   }
   
   function buttonMain() {
@@ -271,3 +278,4 @@ const data = {
       sendMessage();
     }
   });
+});
