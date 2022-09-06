@@ -1,5 +1,10 @@
 $("#podo").on("click",function(){
-
+  var notf=document.getElementById('notf');
+  var notf2=document.getElementById('notf2');
+  notf.style.display="none";   
+  notf2.style.display="none"; 
+  var chatbot=document.getElementById("chatbot");
+  chatbot.style.display="block";  
 const data = {
     "button": [
       {
@@ -151,22 +156,22 @@ const data = {
   }
   function response(id){
     if(id==1){
-        messenger.recieve('Buton 1 Clicked');
+        messenger.recieve('By using this special offer, you can choose one of the annual plans and get 50% discount.');
     }
     if(id==2){
-        messenger.recieve('Buton 2 Clicked');
+        messenger.recieve('This offer is limited to one time only. ');
     }
     if(id==3){
-        messenger.recieve('Buton 3 Clicked');
+        messenger.recieve('Offer does not apply to Jotform Enterprise. The 50% discount applies to the annual Bronze, Silver, or Gold plans.You can upgrade your plan, not downgrade.');
     }
     if(id==4){
-        messenger.recieve('Buton 4 Clicked');
+        messenger.recieve('The price of your current plan will remain the same as long as your subscription continues.');
     }
     if(id==5){
-        messenger.recieve('Buton 5 Clicked');
+        messenger.recieve('A full refund will be issued if you cancel your account within 30 days of the original payment date.');
     }
     if(id==6){
-        messenger.recieve('Buton 6 Clicked');
+        messenger.recieve('Plans will automatically renew at full price one year after the discount is applied. After one year, plans can also be adjusted to a full-priced monthly plan unless canceled.');
     }
   }
     
@@ -197,8 +202,8 @@ const data = {
       buildHTML = new BuildHTML(),
       $input = $('#input'),
       $send = $('#send'),
-      $content = $('#content'),
-      $inner = $('#inner'),
+      $content = $('#podoContent'),
+      $inner = $('#podoInner'),
       buttonOption = data.button;
   
   class Button {
@@ -226,14 +231,16 @@ const data = {
     $input.val('');
     $input.focus();
     setTimeout(() => {
-      messenger.recieve('End of the ChatBot');
+      messenger.recieve('Thank you for using PodoBot.');
     }, 1500);
     setTimeout(()=>{
       var chatbot=document.getElementById("chatbot");
       chatbot.style.display="none";
-    },3000)
-    
-
+    },4000);  
+    setTimeout(()=>{
+      $('#podoContent').empty();
+    },4500);  
+        
   }
   
   function buttonMain() {
@@ -256,13 +263,8 @@ const data = {
   messenger.onButtonOption = buidButton;
   
   setTimeout(() => {
-    messenger.recieve('Hello! Welcome to live chatbot.');
-  }, 1500);
-  
-  setTimeout(() => {
-    messenger.recieve('What would you like to learn more about?');
-  }, 5000);
-    
+    messenger.recieve("5 days left until your monthly plan expires. It's time to choose the yearlyplan with Jotform's special offer for you.");
+  }, 1500);  
   setTimeout(() => {
     buttonMain();
   }, 7500);
