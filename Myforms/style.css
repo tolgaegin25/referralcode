@@ -62,7 +62,7 @@ body{
   }
   .area{
     display:grid;
-    grid-template-columns: 1.3fr 6fr;
+    grid-template-columns: 1.54fr 6fr;
     background-color: #fff;
     border-bottom:1px solid #c8ceed;
   }
@@ -409,4 +409,10 @@ body{
       top:50%;
     }
   
+  }
+  .bgarea{
+    width:100%;
+    height:90%;
+    background-image: url('bg.png');
+    background-size:100%;
   }
