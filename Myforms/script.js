@@ -10,33 +10,33 @@ const data = {
       {
         "id": "1",
         "buttonName": "What is advantage of the campaign?",
-        "value": "marmik desai",
+        
       },
       {
         "id": "2",
         "buttonName": "How long can the offer be used?",
-        "value": "JS",  
+         
       },
       {
         "id": "3",
         "buttonName": "Which plan does the offer apply?",
-        "value": "SVG", 
+         
       },
       {
         "id": "4",
         "buttonName": "Will there be a price increase on the plan after the offer?",
-        "value": "SVG",  
+        
       },
 
       {
         "id": "5",
         "buttonName": "Is there a refund in case of cancellation?",
-        "value": "es6",
+       
       },
       {
         "id": "6",
         "buttonName": "What happens after a year when the plan is finished?",
-        "value": "es6",
+        
         
       }
     ]
@@ -149,7 +149,7 @@ const data = {
         response(item.id);
         setTimeout(() => {
             buttonMain();
-          }, 5000);
+          }, 1000);
         
       }
     })
@@ -236,7 +236,7 @@ const data = {
     setTimeout(()=>{
       var chatbot=document.getElementById("chatbot");
       chatbot.style.display="none";
-    },4000);  
+    },3000);  
     setTimeout(()=>{
       $('#podoContent').empty();
     },4500);  
@@ -267,7 +267,7 @@ const data = {
   }, 1500);  
   setTimeout(() => {
     buttonMain();
-  }, 7500);
+  }, 3500);
   
   $input.focus();
   send.addEventListener("click", sendMessage);
